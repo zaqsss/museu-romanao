@@ -1,0 +1,85 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu Romano</title>
+    <script src="scripts.js" defer></script> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titulo">
+        <ul>
+            <h1 id="tt">Empire Roman Museum</h1>
+            <li><a href="index.html">Início</a></li>
+        </ul>        
+    </div>
+
+    <div class="itens" align="center">
+        <h3>Itens(clique)</h3>
+       
+
+        <div class="image-container" id="romanContainer">
+            <img src="img/roman-empire.jpg" alt="Roman Empire" width="300" id="romanImg" class="clickable" onclick="toggleDescription('descRoman')">
+            <div class="description" id="descRoman" style="display: none;">
+                <p>Essa é uma escultura do Império Romano, datada do século III. Ela representa a glória e o poder militar de Roma.</p>
+            </div>
+        </div>
+
+        <div class="image-container" id="shutterContainer">
+            <img src="img/shutterstock_718994014.jpg" alt="Shutterstock Image" width="300" id="shutterstockImg" class="clickable" onclick="toggleDescription('descShutter')">
+            <div class="description" id="descShutter" style="display: none;">
+                <p>Esta imagem representa a arquitetura romana clássica, com colunas de estilo coríntio.</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="img/Roman-Artifacts.jpg" alt="Roman Artifacts" width="300" class="clickable" onclick="toggleDescription('descArtifacts')">
+            <div class="description" id="descArtifacts" style="display: none;">
+                <p>Esses são artefatos romanos que ilustram a vida cotidiana e a cultura do Império Romano.</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="img/The Warren Cup, British Museum.webp" alt="Warren Cup" width="300" class="clickable" onclick="toggleDescription('descWarrenCup')">
+            <div class="description" id="descWarrenCup" style="display: none;">
+                <p>A Warren Cup é um famoso vaso romano do século I, conhecido por suas representações eróticas.</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="img/Room_70_British_Museum_virtual_tour.webp" alt="Room 70 British Museum" width="300" class="clickable" onclick="toggleDescription('descRoom70')">
+            <div class="description" id="descRoom70" style="display: none;">
+                <p>Esta imagem mostra a Sala 70 do Museu Britânico, que abriga uma impressionante coleção de artefatos romanos.</p>
+            </div>
+        </div>
+        
+    </div>
+
+
+<button id="quizBtn" class="clickable" onclick="showQuizPopup()">Teste seu conhecimento</button>
+
+
+<button id="exitBtn" class="clickable" onclick="showExitPopup()">Sair</button>
+
+
+
+<div id="quizPopup" class="popup" style="display:none;">
+    <div class="popup-content">
+        <span class="close" onclick="closeQuizPopup()">&times;</span>
+        <p>Quem foi o primeiro imperador romano?</p>
+        <button onclick="checkAnswer('Augusto')">Augusto</button>
+        <button onclick="checkAnswer('Júlio César')">Júlio César</button>
+        <p id="quizFeedback"></p>
+    </div>
+</div>
+
+
+<div id="exitPopup" class="popup" style="display:none;">
+    <div class="popup-content">
+        <span class="close" onclick="closeExitPopup()">&times;</span>
+        <p>Obrigado por visitar o Empire Roman Museum! Confira outras exposições e conteúdos relacionados.</p>
+    </div>
+</div>
+
+</body>
+</html>

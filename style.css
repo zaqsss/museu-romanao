@@ -1,0 +1,161 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(131, 65, 11);
+}
+
+.titulo {  
+    background-color: rgb(187, 133, 62);
+    text-align: center;
+}
+
+.titulo li {
+    text-align: left;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.titulo ul {
+    padding: 0;
+}
+
+#tt {
+    font-size: 2.5rem;
+    color: black;
+}
+
+.historia h3, h4, p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.historia h4 {
+    color: rgb(255, 166, 0);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+#ss {
+    padding-left: 20%;
+}
+
+.itens h3 {
+    padding-right: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(255, 166, 0);
+}
+
+
+.itens img {
+    padding-right: 40px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 10px 0;
+}
+
+#ll {
+    padding-inline-start: 0;
+    
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+    #tt {
+        font-size: 3rem;
+    }
+
+
+
+    .itens h3 {
+        font-size: 2.5rem;
+    }
+
+    #barto {
+        font-size: 1.2rem;
+    }
+}
+
+.description {
+    background-color: rgba(70, 37, 6, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgb(187, 133, 62);
+    z-index: 1000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup-content {
+    padding: 20px;
+    font-size: 18px;
+    color: rgb(70, 37, 6);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.popup button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(187, 133, 62);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.popup button:hover {
+    background-color: rgb(131, 65, 11);
+}
+
+#quizFeedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+#curioBtn{
+    display: flex;
+    position: relative;
+    left: 47%;
+}
+
+button{
+    background-color: rgb(240, 190, 97);
+}

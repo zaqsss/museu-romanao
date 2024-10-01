@@ -1,0 +1,87 @@
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Museu romano</title>
+<script src="scripts.js" defer></script> 
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <div class="titulo">
+        <ul>
+            <h1 id="tt">Empire Roman Museum</h1>
+            
+            <li><a href="index2.html">tour</a></li>
+
+            
+        </ul>        
+    </div>
+
+    <div class="historia">
+    
+    <h4>Inauguração e Propósito</h4>
+    <p>O Empire Roman Museum foi inaugurado em 2007, em Roma, com o objetivo de celebrar e preservar o legado do Império Romano. Diferente de outros museus tradicionais, ele oferece uma visão mais ampla do império, explorando tanto seus aspectos militares e políticos quanto a vida cotidiana e a administração de suas províncias.
+</p>     <h4>Motivação e Criação</h4>
+    <p> A criação do museu foi impulsionada por descobertas arqueológicas importantes, como uma coleção de moedas romanas e documentos administrativos do século III. Essas descobertas lançaram nova luz sobre o funcionamento das províncias romanas e o extenso sistema de comércio que conectava Roma com regiões distantes. Inspirados por essas revelações, autoridades decidiram criar um espaço inovador que reunisse esse conhecimento.
+</p>
+    <h4>Tecnologia e Interatividade</h4> 
+    <p>O museu se destaca por seu uso extensivo de tecnologia moderna, como realidade virtual e aumentada. Isso permite aos visitantes vivenciar aspectos da vida no Império Romano de forma imersiva. Entre os destaques estão as recriações digitais de monumentos icônicos como o Fórum Romano e o Coliseu, onde os visitantes podem explorar esses locais históricos como se estivessem na Antiguidade.</p>    
+    <h4>Exposições e Atrações</h4> 
+    <p>O Empire Roman Museum é dividido em várias seções, cada uma dedicada a um tema específico do Império:
+    - Seção de Batalhas: Exibe grandes conquistas militares, como a campanha de Júlio César na Gália.
+    - Vida Cotidiana: Mostra como viviam os cidadãos romanos e os povos das províncias, com réplicas de objetos e vestimentas da época.
+    - Monumentos e Arquitetura: Recriações em tamanho real do Fórum Romano e do Coliseu.
+</p>
+    <p>Além disso, o museu conta com o Teatro da História, onde os visitantes podem assistir a projeções imersivas sobre momentos-chave, como a ascensão de Augusto e a queda de Roma.
+</p>
+    <h4>Impacto e Importância</h4>
+    <p>Desde sua inauguração, o Empire Roman Museum se tornou um marco cultural e turístico, atraindo tanto estudiosos quanto o público em geral. Com suas exposições interativas e abordagem inovadora, o museu oferece uma rica oportunidade de explorar a grandiosidade e a complexidade do maior império da Antiguidade.
+ </p>   </div>
+
+
+
+<img src="img/The Roman Empire Museum (Capitolini) Ticket in Rome.jpg" alt=""
+width="800"
+height="500"
+id="ss"
+>
+<br>
+<button id="curioBtn" class="clickable" onclick="showcuriosidade()">curiosidade</button>
+
+
+<button id="quizBtn" class="clickable" onclick="showQuizPopup()">Teste seu conhecimento</button>
+
+<button id="exitBtn" class="clickable" onclick="showExitPopup()">Sair</button>
+
+
+<div id="curiosidadePopup" class="popup" style="display:none;">
+    <div class="popup-content">
+        <span class="close" onclick="closeCuriosidadePopup()">&times;</span>
+        <p>Sabia que esse quadro levou 5 anos para ser concluído?</p>
+    </div>
+</div>
+
+
+<div id="quizPopup" class="popup" style="display:none;">
+    <div class="popup-content">
+        <span class="close" onclick="closeQuizPopup()">&times;</span>
+        <p>Quem foi o primeiro imperador romano?</p>
+        <button onclick="checkAnswer('Augusto')">Augusto</button>
+        <button onclick="checkAnswer('Júlio César')">Júlio César</button>
+        <p id="quizFeedback"></p>
+    </div>
+</div>
+
+
+<div id="exitPopup" class="popup" style="display:none;">
+    <div class="popup-content">
+        <span class="close" onclick="closeExitPopup()">&times;</span>
+        <p>Obrigado por visitar o Empire Roman Museum! Confira outras exposições e conteúdos relacionados.</p>
+    </div>
+</div>
+
+
+</body>
+</html>
